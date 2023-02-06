@@ -4,7 +4,7 @@
 #include "Matrix.hpp"
 
 Matrix operator* ( const Matrix& A, const Matrix& B );
-
+Matrix multiplication(const Matrix& A, const Matrix& B, int szBlock);
 enum prod_algo { naive, block, parallel_naive, parallel_block1, parallel_block2 } ;
 void setProdMatMat( prod_algo algo );
 void setBlockSize( int size );
