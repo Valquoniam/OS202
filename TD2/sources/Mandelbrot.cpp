@@ -48,7 +48,7 @@ int iterMandelbrot( int maxIter, const Complex& c)
     if ( c.real*c.real+c.imag*c.imag < 0.0625 )
         return maxIter;
     if ( (c.real+1)*(c.real+1)+c.imag*c.imag < 0.0625 )
-        return maxIter;
+9        return maxIter;
     // Appartenance à la cardioïde {(1/4,0),1/2(1-cos(theta))}    
     if ((c.real > -0.75) && (c.real < 0.5) ) {
         Complex ct{c.real-0.25,c.imag};
