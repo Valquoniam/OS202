@@ -70,4 +70,27 @@ if rank == 0:
     print(f"Temps de calcul des générations de cellules : {compute_time_max:.6g} s.")
     print(f"Temps d'affichage des résultats : {display_time_max:.6g} s.")
 
+
+
+if rank==0:
+    # Partie d'affichage des temps de calcul et d'affichage
+    plt.clf()
+
+    X = range(1,5)
+    tps_calcul = [0.757,0.47,0.44,0.31]
+    tps_affichage = [14.99,6.89,5.99,4.99]
+
+    fig, axs = plt.subplots(2)
+    axs[0].set_title("Temps de calcul en fonction du nombre de processus")
+    axs[1].set_title("Temps d'affichage en fonction du nombre de processus")
+
+    axs[0].plot(X, tps_calcul)
+    axs[1].plot(X, tps_affichage)
+
+    for ax in axs.flat:
+        ax.set(xlabel='nombre de processus', ylabel='temps (s)')
+    #plt.legend(["Temps de calcul","Temps d'affichage"])
+    plt.title("Temps d'affichage en fonction du nombre de processus")
+    plt.show()
+
 MPI.Finalize()
