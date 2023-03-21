@@ -13,7 +13,7 @@ Mon ordinateur possède (commande `lscpu` ) :
 
 #### Tous les temps de calcul seront basés sur le calcul des 256 possibilités et leur affichage en .md
 
-### 1
+### (1)
 Sans parallélisation, voici les temps de calcul et d'affichage du code :
 
 ```bash
@@ -38,12 +38,14 @@ Voici un tableau qui résume les résultats obtenus :
 
 | **Nombre de coeurs**| 1 | 2 | 3 | 4 |
 | ------------------- | --| --| --| --|
-| **Temps de calcul** | 0.757 | 0.47 | 0.44 | 0.31|
-| **Temps d'affichage**| 14.99 | 6.89 | 5.99 | 4.9 |
+| **Temps de calcul** (s)| 0.757 | 0.47 | 0.44 | 0.31|
+| **Temps d'affichage** (s)| 14.99 | 6.89 | 5.99 | 4.9 |
 
-### 2
+### (2)
 
 On ajoute à la fin de notre code python un plot de graph pour un nombre de coeurs allant de 0 à 4. Voici le résultat :
 
-![Temps de calcul et d'affichage en fonction du nombre de processus](plots.png){width=60%}
+![Temps de calcul et d'affichage en fonction du nombre de processus](images/plots_automate.png.png){width=50%}{height =50%}
+
+## Calcul d'une enveloppe convexe
 
