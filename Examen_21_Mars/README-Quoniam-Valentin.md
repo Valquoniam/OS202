@@ -45,7 +45,7 @@ Voici un tableau qui résume les résultats obtenus :
 
 On ajoute à la fin de notre code python un plot de graph pour un nombre de coeurs allant de 0 à 4. Voici le résultat :
 
-![Temps de calcul et d'affichage en fonction du nombre de processus](images/plots_automate.png.png){width=50%}{height =50%}
+![Temps de calcul et d'affichage en fonction du nombre de processus](images/plots_automate.png){width=50%}{height =50%}
 
 ## Calcul d'une enveloppe convexe
 
