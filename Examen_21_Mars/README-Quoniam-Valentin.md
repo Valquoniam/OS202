@@ -37,6 +37,7 @@ On a un donc speedup de **2,2** sur le temps d'affichage en passant de 1 à 4 co
 Voici un tableau qui résume les résultats obtenus :
 
 | **Nombre de coeurs**| 1 | 2 | 3 | 4 |
+| ------------------- | --| --| --| --|
 | **Temps de calcul** | 0.757 | 0.47 | 0.44 | 0.31|
 | **Temps d'affichage**| 14.99 | 6.89 | 5.99 | 4.9 |
 
